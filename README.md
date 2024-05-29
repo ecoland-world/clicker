@@ -59,3 +59,46 @@ Time update is not handled by phaser as the update process does not work properl
     setTimeout( _ => this.loop(), RefreshRatio)
   }
 ```
+
+### Business
+
+`src/scenes/game/business/Business.js`
+Is a Container that groups all the behaviour and logic related to the business, is composed by:
+
+`src/scenes/game/businesss/Icon.js`: contains the icon image for the business, handles the action of produce money, and displays the total invesments on this business, also a progress bar indicating how far is to duplicate the production speed.
+
+`src/scenes/game/business/Progress.js` displays the progress of the production and how much money will be generated after completion.
+
+`src/scenes/game/business/Invest.js` handles the action of invest, it also displays the ammount of money required to purchase.
+
+`src/scenes/game/business/Time.js` displays the remaining time to get the money.
+
+`src/scenes/game/business/Manager.js` is a button that allows to purchase a manager to handle automatic production, a farmer sprite is displayed when is active.
+
+### Data
+
+* `src/config/constants.js`: contains all non transient data, this file contains definitions about, resolution, scenes to load, debug mode and business sprites, coefficients an fixed costs.
+
+* `src/config/gameStats.js`: is a variable board containing all logic state that requires to be stored.
+
+Data on `gameStats` is synced every 5 seconds on localstorage (as a fallback) and to a remote server. (see)
+
+## Mechanics
+
+All mechanics are basically the same as adventure capitalist:
+
+* Buy and upgrade business
+* Make money from a business
+* Hire managers
+* When game is closed, the next time you open it, it displays the money that all business made.
+
+## Next work
+
+* Options to enable/disable music
+* Change the name of the farmer
+* new mechanics related with managers:
+	* pick one of two possible manager for every business
+	* each manager has different skills: produce faster, reduce costs,
+	* each manager has levels, player need to upgrade managers in order to unlock new skills.
+* new mechanics related with business:
+	* every business triggers unexpected events, could be bad or good ones. miners discover a big diamond, thieves steal jewels from jewelries.
