@@ -1,4 +1,3 @@
-import { Scene } from "phaser";
 import constants from "../config/constants";
 import fonts from "../config/fonts";
 import getSceneManager from "../managers/sceneManager";
@@ -9,7 +8,7 @@ import stats from "../utils/performance";
 
 import Button from "../gameObjects/button";
 import RichText from "../gameObjects/richText";
-export class Game extends Scene {
+export class Scene extends Phaser.Scene {
   constructor(params) {
     super(params);
     this.constants = constants;
