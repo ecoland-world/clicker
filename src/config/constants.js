@@ -183,7 +183,7 @@ const TRIGGERS = {
 };
 
 const TITLES = [
-  "Urban Farmer",
+  "Farmer",
   "Neon Grower",
   "Cyber Farmer",
   "Tech Steward",
