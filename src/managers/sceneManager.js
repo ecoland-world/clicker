@@ -11,11 +11,11 @@ class SceneManager {
 
   changeToScene(key, data) {
     this.stack.forEach((sceneKey) => {
-      this.scene.queueOp("stop", sceneKey);
+      this.scene.stop(sceneKey);
       this.removeGameScene(sceneKey);
     });
 
-    this.scene.queueOp("start", key, data || {});
+    this.scene.start(key, data || {});
     this.stack = [key];
     this.gameKeys = [];
 
@@ -28,10 +28,10 @@ class SceneManager {
   openMenu(key, data) {
     let lastKey = this.getLastSceneKey();
 
-    this.scene.queueOp("pause", lastKey);
+    this.scene.pause(lastKey);
     this.scene.getScene(lastKey).sys.setVisible(false);
 
-    this.scene.queueOp("start", key, data || {});
+    this.scene.start(key, data || {});
     this.scene.bringToTop(key);
     this.stack.push(key);
   }
@@ -43,10 +43,10 @@ class SceneManager {
 
     key = this.stack[index];
     this.stack.splice(index, 1);
-    this.scene.queueOp("stop", key);
+    this.scene.stop(key);
 
     key = this.getLastSceneKey();
-    this.scene.queueOp("resume", key);
+    this.scene.resume(key);
     this.scene.getScene(key).sys.setVisible(true);
   }
 
@@ -56,7 +56,7 @@ class SceneManager {
   }
 
   overlay(key) {
-    this.scene.queueOp("start", key);
+    this.scene.start(key);
     this.scene.bringToTop(key);
     this.stack.push(key);
   }
@@ -74,24 +74,24 @@ class SceneManager {
 
   pauseGame() {
     this.gameKeys.forEach((gameKey) => {
-      this.scene.queueOp("pause", gameKey);
+      this.scene.pause(gameKey);
     });
   }
 
   resumeGame() {
     this.gameKeys.forEach((gameKey) => {
-      this.scene.queueOp("resume", gameKey);
+      this.scene.resume(gameKey);
     });
   }
 
   restartScene() {
     let key = this.stack[0];
     this.stack.forEach((sceneKey) => {
-      this.scene.queueOp("stop", sceneKey);
+      this.scene.stop(sceneKey);
       this.removeGameScene(sceneKey);
     });
 
-    this.scene.queueOp("start", key, {});
+    this.scene.start(key, {});
     this.stack = [key];
     this.gameKeys = [];
   }
