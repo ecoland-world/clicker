@@ -1,6 +1,6 @@
-import { Scene } from "../scene";
+import { MainScene } from "../Scene";
 import constants from "../../config/constants";
-export default class SplashScene extends Scene {
+export default class SplashScene extends MainScene {
   constructor() {
     super({ key: "splashScene" });
     this.constants = constants;

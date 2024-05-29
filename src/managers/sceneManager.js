@@ -11,6 +11,7 @@ class SceneManager {
 
   changeToScene(key, data) {
     this.stack.forEach((sceneKey) => {
+      console.log(sceneKey);
       this.scene.stop(sceneKey);
       this.removeGameScene(sceneKey);
     });

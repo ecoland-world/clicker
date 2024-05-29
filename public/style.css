@@ -1,8 +1,9 @@
-body {
+html,body {
     margin: 0;
     padding: 0;
     color: rgba(255, 255, 255, 0.87);
-    background-color: #000000;
+    background-color: #141414;
+    font-family: 'CalvertMT';
 }
 
 #app {
@@ -12,4 +13,29 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@font-face {
+    font-family: 'CalvertMT';
+    src: url('assets/fonts/CalvertMT.woff2') format('woff2'),
+         url('assets/fonts/CalvertMT.woff') format('woff'),
+         url('assets/fonts/CalvertMT.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'CalvertMT-Bold';
+    src: url('assets/fonts/CalvertMTStd-Bold.woff') format('woff'),
+         url('assets/fonts/CalvertMTStd-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+h1, h2 {
+    position: absolute;
+    left: -99999px;
+}
+h2 {
+    font-family: 'CalvertMT-Bold'
 }

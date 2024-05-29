@@ -1,9 +1,9 @@
-import { Scene } from "../scene";
 import constants from "../../config/constants";
+import { MainScene } from "../Scene";
 //const env = 'PRODUCTION'
 const env = "DEV";
 
-export default class BootScene extends Scene {
+export default class BootScene extends MainScene {
   constructor() {
     super({ key: "bootScene" });
     this.constants = constants;
@@ -109,7 +109,7 @@ export default class BootScene extends Scene {
     this.load.image("hireButtonDisabled", uiRoute + "hire_button_disabled.png");
     this.load.image("managerBG", uiRoute + "manager_bg.png");
     this.load.image("infoBox", uiRoute + "info.png");
-    this.load.image("dwarfKing", uiRoute + "dwarf.png");
+    this.load.image("farmerGirl", uiRoute + "farmer_girl.png");
     this.load.image("arrow", uiRoute + "arrow.png");
     this.load.image("notificationBG", uiRoute + "notification.png");
 
@@ -143,7 +143,7 @@ export default class BootScene extends Scene {
 
     // load icons
     const iconsRoute = `${urlBase}assets/sprites/business/`;
-    this.load.image("mines", iconsRoute + "mines.png");
+    this.load.image("wheat_field", iconsRoute + "wheat_field.png");
     this.load.image("drill", iconsRoute + "drill.png");
     this.load.image("tavern", iconsRoute + "tavern.png");
     this.load.image("forge", iconsRoute + "forge.png");

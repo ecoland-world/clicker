@@ -1,9 +1,9 @@
-import { Scene } from "../scene";
+import { MainScene } from "../Scene";
 
 //const env = 'PRODUCTION'
 const env = "DEV";
 
-export default class PreBootScene extends Scene {
+export default class PreBootScene extends MainScene {
   constructor() {
     super({ key: "prebootScene" });
 
@@ -21,7 +21,7 @@ export default class PreBootScene extends Scene {
     // load ui
     const uiRoute = `${urlBase}assets/sprites/ui/`;
 
-    this.load.image("title", uiRoute + "dwarf_empire_title.png");
+    this.load.image("title", uiRoute + "ecoland-logo.png");
     this.load.image("mainBG", uiRoute + "de_bg.jpg");
     this.load.on("complete", () => {
       this.changeToScene(this.nextScene);

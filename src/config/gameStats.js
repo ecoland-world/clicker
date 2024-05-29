@@ -17,12 +17,12 @@ let stats = {
   },
   tutorial: {
     triggers: "TUTO_B",
-    text: "Welcome to the Future Farm Lands!\nHelp us grow resources by clicking on the Hydro Farm icon!",
+    text: "Welcome to the Future Farm Lands!\nHelp us grow resources by clicking on the Wheat icon!",
     open: true,
-    arrow: "HYDRO_FARM.icon",
+    arrow: "WHEAT_FIELD.icon",
   },
   notification: {
-    icon: "mines",
+    icon: "wheat_field",
     text: "-----",
     open: false,
   },
@@ -31,63 +31,63 @@ let stats = {
     current: "bootScene",
   },
   businesses: {
-    HYDRO_FARM: {
+    WHEAT_FIELD: {
       investments: 1,
       manager: false,
       timeTriggered: -1,
       producing: false,
       speed: 1,
     },
-    VERTICAL_GARDEN: {
+    DRILL: {
       investments: 0,
       manager: false,
       timeTriggered: -1,
       producing: false,
       speed: 1,
     },
-    BIO_LAB: {
+    TAVERN: {
       investments: 0,
       manager: false,
       timeTriggered: -1,
       producing: false,
       speed: 1,
     },
-    CYBER_FARM: {
+    FORGE: {
       investments: 0,
       manager: false,
       timeTriggered: -1,
       producing: false,
       speed: 1,
     },
-    ECO_TOWER: {
+    JEWELERY: {
       investments: 0,
       manager: false,
       timeTriggered: -1,
       producing: false,
       speed: 1,
     },
-    NANO_FARM: {
+    TRADE: {
       investments: 0,
       manager: false,
       timeTriggered: -1,
       producing: false,
       speed: 1,
     },
-    SOLAR_RANCH: {
+    CASTLE: {
       investments: 0,
       manager: false,
       timeTriggered: -1,
       producing: false,
       speed: 1,
     },
-    TECH_VILLAGE: {
+    ARMY: {
       investments: 0,
       manager: false,
       timeTriggered: -1,
       producing: false,
       speed: 1,
     },
-    FUTURE_CITY: {
+    QUEST: {
       investments: 0,
       manager: false,
       timeTriggered: -1,
@@ -186,8 +186,8 @@ let syncFromServer = () => {
 
 // first load data from local manager - fallback
 let loadData = () => {
-  getDataManager("dwarfEmpire");
-  getDataManager("dwarfEmpire").load((err, data) => {
+  getDataManager("eco-clicker");
+  getDataManager("eco-clicker").load((err, data) => {
     if (data) {
       // data loaded from localstorage // fallback
       setData(data);

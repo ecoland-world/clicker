@@ -8,7 +8,7 @@ import stats from "../utils/performance";
 
 import Button from "../gameObjects/button";
 import RichText from "../gameObjects/richText";
-export class Scene extends Phaser.Scene {
+export class MainScene extends Phaser.Scene {
   constructor(params) {
     super(params);
     this.constants = constants;
