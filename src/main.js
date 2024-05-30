@@ -36,18 +36,7 @@ const config = {
   ],
 };
 
-// init managers
-// getSceneManager(config.scene);
-
-// setTimeout(() => {
-//   document.querySelector("canvas").focus();
-//   window.focus();
-//   document.querySelector("canvas").oncontextmenu = function (e) {
-//     e.preventDefault();
-//   };
-// }, 1000);
-
-// // how it works with game context?
+// how it works with game context?
 if (constants.DAT_GUI_ENABLE) {
   gs.setListener("game.backgroundColor", (val) => {
     let color = Phaser.Display.Color.HexStringToColor(val);

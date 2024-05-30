@@ -33,15 +33,13 @@ const DAT_GUI_ENABLE = false;
 
 const AFTER_BOOT_SCENE = "gameScene";
 const BUSINESS_KEYS = [
-  "WHEAT_FIELD",
-  "DRILL",
-  "TAVERN",
-  "FORGE",
+  "SHOVEL",
+  "CLIO",
   "JEWELERY",
-  "TRADE",
-  "CASTLE",
-  "ARMY",
+  "POULTRY",
   "QUEST",
+  "BATTERY",
+  "FISHERY",
 ];
 const BUSINESSES = {
   WHEAT_FIELD: {
