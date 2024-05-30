@@ -145,9 +145,9 @@ export default class HUDGameScene extends MainScene {
     let iconbg = this.add.sprite(85, 90, "iconBg");
     this.notificationContainer.add(iconbg);
 
-    this.icon = this.add.sprite(40, 55, "wheat_field");
+    this.icon = this.add.sprite(40, 55, "shovel");
     this.notificationContainer.add(this.icon);
-    this.notificationText = this.add.text(160, 40, "Wheat increase speed X2", {
+    this.notificationText = this.add.text(160, 40, "Shovel speed X2", {
       fontFamily: "CalvertMT-Bold",
       color: "#fff",
       align: "left",

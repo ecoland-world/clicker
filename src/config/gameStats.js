@@ -17,12 +17,12 @@ let stats = {
   },
   tutorial: {
     triggers: "TUTO_B",
-    text: "Welcome to the Future Farm Lands!\nHelp us grow resources by clicking on the Wheat icon!",
+    text: "Welcome to the Future Farm Lands!\nHelp us grow resources by clicking on the Shovel icon!",
     open: true,
-    arrow: "WHEAT_FIELD.icon",
+    arrow: "SHOVEL.icon",
   },
   notification: {
-    icon: "wheat_field",
+    icon: "shovel",
     text: "-----",
     open: false,
   },
@@ -31,28 +31,14 @@ let stats = {
     current: "bootScene",
   },
   businesses: {
-    WHEAT_FIELD: {
+    SHOVEL: {
       investments: 1,
       manager: false,
       timeTriggered: -1,
       producing: false,
       speed: 1,
     },
-    DRILL: {
-      investments: 0,
-      manager: false,
-      timeTriggered: -1,
-      producing: false,
-      speed: 1,
-    },
-    TAVERN: {
-      investments: 0,
-      manager: false,
-      timeTriggered: -1,
-      producing: false,
-      speed: 1,
-    },
-    FORGE: {
+    CLIO: {
       investments: 0,
       manager: false,
       timeTriggered: -1,
@@ -66,21 +52,7 @@ let stats = {
       producing: false,
       speed: 1,
     },
-    TRADE: {
-      investments: 0,
-      manager: false,
-      timeTriggered: -1,
-      producing: false,
-      speed: 1,
-    },
-    CASTLE: {
-      investments: 0,
-      manager: false,
-      timeTriggered: -1,
-      producing: false,
-      speed: 1,
-    },
-    ARMY: {
+    POULTRY: {
       investments: 0,
       manager: false,
       timeTriggered: -1,
@@ -88,6 +60,34 @@ let stats = {
       speed: 1,
     },
     QUEST: {
+      investments: 0,
+      manager: false,
+      timeTriggered: -1,
+      producing: false,
+      speed: 1,
+    },
+    WINRY: {
+      investments: 0,
+      manager: false,
+      timeTriggered: -1,
+      producing: false,
+      speed: 1,
+    },
+    FISHERY: {
+      investments: 0,
+      manager: false,
+      timeTriggered: -1,
+      producing: false,
+      speed: 1,
+    },
+    BATTERY: {
+      investments: 0,
+      manager: false,
+      timeTriggered: -1,
+      producing: false,
+      speed: 1,
+    },
+    REAKTOR: {
       investments: 0,
       manager: false,
       timeTriggered: -1,

@@ -143,15 +143,15 @@ export default class BootScene extends MainScene {
 
     // load icons
     const iconsRoute = `${urlBase}assets/sprites/business/`;
-    this.load.image("wheat_field", iconsRoute + "wheat_field.png");
-    this.load.image("drill", iconsRoute + "drill.png");
-    this.load.image("tavern", iconsRoute + "tavern.png");
-    this.load.image("forge", iconsRoute + "forge.png");
+    this.load.image("shovel", iconsRoute + "shovel.png");
+    this.load.image("clio", iconsRoute + "clio.png");
     this.load.image("jewelery", iconsRoute + "jewelery.png");
-    this.load.image("trade", iconsRoute + "trade.png");
-    this.load.image("castle", iconsRoute + "castle.png");
-    this.load.image("army", iconsRoute + "army.png");
+    this.load.image("poultry", iconsRoute + "poultry.png");
     this.load.image("quest", iconsRoute + "quest.png");
+    this.load.image("winery", iconsRoute + "winery.png");
+    this.load.image("fishery", iconsRoute + "fishery.png");
+    this.load.image("battery", iconsRoute + "battery.png");
+    this.load.image("reaktor", iconsRoute + "reaktor.png");
     this.load.image("coin", iconsRoute + "coin.png");
 
     // load mx

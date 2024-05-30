@@ -184,7 +184,7 @@ export default class GameScene extends MainScene {
     gs.set("character.level", gs.stats.character.level + 1);
     gs.set(
       "character.title",
-      constants.TITLES[parseInt(gs.stats.character.level / 5)] || "DWARF GOD"
+      constants.TITLES[parseInt(gs.stats.character.level / 5)] || "FARM GOD"
     );
   }
 
@@ -237,7 +237,7 @@ export default class GameScene extends MainScene {
   updateIdle(dt) {
     this.timeToSave -= dt;
     if (this.timeToSave < 0) {
-      getDataManager("dwarfEmpire").save({ data: gs.stats, useHash: true });
+      getDataManager("eco-clicker").save({ data: gs.stats, useHash: true });
       serverConnector.saveGame(gs.stats);
       this.timeToSave = SAVE_TIMEOUT;
     }
