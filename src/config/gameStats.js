@@ -66,7 +66,7 @@ let stats = {
       producing: false,
       speed: 1,
     },
-    WINRY: {
+    WINERY: {
       investments: 0,
       manager: false,
       timeTriggered: -1,
