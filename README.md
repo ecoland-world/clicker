@@ -106,7 +106,8 @@ All mechanics are basically the same as adventure capitalist:
 * Buy and upgrade business
 * Make money from a business
 * Hire managers
-  ![managers](public/assets/readme/managers.png)
+<img src="public/assets/readme/managers.png" alt="Example Image" style="width:50%;">
+
 * When game is closed, the next time you open it, it displays the money that all business made.
 
 ## Roadmap
