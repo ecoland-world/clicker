@@ -108,7 +108,7 @@ All mechanics are basically the same as adventure capitalist:
 * Hire managers
 * When game is closed, the next time you open it, it displays the money that all business made.
 
-## Next work
+## Roadmap
 
 * Options to enable/disable music
 * Change the name of the farmer
