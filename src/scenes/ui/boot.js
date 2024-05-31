@@ -124,22 +124,15 @@ export default class BootScene extends MainScene {
 
     // load characters
     const characterRoute = `${urlBase}assets/sprites/characters/`;
-    this.load.spritesheet("dwarf1", characterRoute + "dwarf1.png", {
-      frameWidth: 52,
-      frameHeight: 72,
-    });
-    this.load.spritesheet("dwarf2", characterRoute + "dwarf2.png", {
-      frameWidth: 52,
-      frameHeight: 72,
-    });
-    this.load.spritesheet("dwarf1_emote", characterRoute + "dwarf1_emote.png", {
-      frameWidth: 52,
-      frameHeight: 72,
-    });
-    this.load.spritesheet("dwarf2_emote", characterRoute + "dwarf2_emote.png", {
-      frameWidth: 52,
-      frameHeight: 72,
-    });
+    this.load.image("manager1", characterRoute + "manager1.png");
+    this.load.image("manager2", characterRoute + "manager2.png");
+    this.load.image("manager3", characterRoute + "manager3.png");
+    this.load.image("manager4", characterRoute + "manager4.png");
+    this.load.image("manager5", characterRoute + "manager5.png");
+    this.load.image("manager6", characterRoute + "manager6.png");
+    this.load.image("manager7", characterRoute + "manager7.png");
+    this.load.image("manager8", characterRoute + "manager8.png");
+    this.load.image("manager9", characterRoute + "manager9.png");
 
     // load icons
     const iconsRoute = `${urlBase}assets/sprites/business/`;

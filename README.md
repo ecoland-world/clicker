@@ -1,4 +1,7 @@
-# Ecoland - Future Farm
+
+![Ecoland Logo](public/assets/sprites/ui/ecoland-logo.png)
+
+# Ecoland - Future Farm Lands
 
 **Future Farm** is an HTML5 game based on [Adventure Capitalist](https://en.wikipedia.org/wiki/AdVenture_Capitalist)., created with [Phaser3 - Webpack template](https://github.com/phaserjs/template-webpack).
 The game was designed mobile first and you can play it now on:
@@ -39,6 +42,7 @@ The game uses 4 scenes:
 * `src/scenes/ui/boot.js` to load all the assets required for the game
 * `src/scenes/ui/preboot.js` only loads the logo and background images in order to provide a better loading screen
 * `src/scenes/game/HUDgame.js` displays notifications and avatar related data.
+  ![avatar](public/assets/readme/avatar.png)
 * `src/scenes/game/game.js` is the main scene, contains a dictionary of `Business`, sound bg and fxs, particle emitters.
 
 ### Time management for idle component
