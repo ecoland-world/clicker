@@ -5,7 +5,7 @@
 
 
 **Future Farm** is an HTML5 game based on [Adventure Capitalist](https://en.wikipedia.org/wiki/AdVenture_Capitalist)., created with [Phaser3 - Webpack template](https://github.com/phaserjs/template-webpack).
-The game was designed mobile first and you can play it now on:
+The game was designed mobile first and you can play it now on: [https://ecoland.s3.eu-central-1.amazonaws.com/future-farm/index.html](https://ecoland.s3.eu-central-1.amazonaws.com/future-farm/index.html)
 
 ## Development
 
