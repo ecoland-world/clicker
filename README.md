@@ -113,8 +113,8 @@ All mechanics are basically the same as adventure capitalist:
 * Options to enable/disable music
 * Change the name of the farmer
 * new mechanics related with managers:
-	* pick one of two possible manager for every business
-	* each manager has different skills: produce faster, reduce costs,
-	* each manager has levels, player need to upgrade managers in order to unlock new skills.
+  * pick one of two possible manager for every business
+  * each manager has different skills: produce faster, reduce costs,
+  * each manager has levels, player need to upgrade managers in order to unlock new skills.
 * new mechanics related with business:
-	* every business triggers unexpected events, could be bad or good ones. miners discover a big diamond, thieves steal jewels from jewelries.
+  * every business triggers unexpected events, could be bad or good ones. miners discover a big diamond, thieves steal jewels from jewelries.
