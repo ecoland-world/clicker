@@ -20,7 +20,7 @@ Just run: `$ npm install`
 
 To build the game run `$ npm run build` it generates a `dist` folder with: `bundle.min.js`, `index.html` and all the assets on `assets` folder.
 
-If you store the assets in a different static server provider beware to set the awsPrefix=`url` on `src/scenes/ui/boot.js` and `src/scenes/ui/preboot.js` files. (check the [deploy](https://github.com/ecoland-world/clicker/tree/deploy) branch to see an example)
+If you store the assets in a different static server provider beware to set the awsPrefix=`url` on `src/scenes/ui/boot.js` and `src/scenes/ui/preboot.js` files.
 
 ### Deploy
 
