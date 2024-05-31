@@ -66,9 +66,10 @@ Time update is not handled by phaser as the update process does not work properl
 
 ### Business
 
+![business](public/assets/readme/business.png)
 `src/scenes/game/business/Business.js`
 Is a Container that groups all the behaviour and logic related to the business, is composed by:
-
+![shovel](public/assets/readme/shovel.png)
 `src/scenes/game/businesss/Icon.js`: contains the icon image for the business, handles the action of produce money, and displays the total invesments on this business, also a progress bar indicating how far is to duplicate the production speed.
 
 `src/scenes/game/business/Progress.js` displays the progress of the production and how much money will be generated after completion.
