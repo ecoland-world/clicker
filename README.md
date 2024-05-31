@@ -76,20 +76,19 @@ Is a Container that groups all the behaviour and logic related to the business, 
 
 `src/scenes/game/businesss/Icon.js`: contains the icon image for the business, handles the action of produce money, and displays the total invesments on this business, also a progress bar indicating how far is to duplicate the production speed.
 
-<img src="public/assets/readme/progress.png" alt="progress" style="width:50%;">
+![progress](public/assets/readme/progress.png)
 
 `src/scenes/game/business/Progress.js` displays the progress of the production and how much money will be generated after completion.
 
-<img src="public/assets/readme/buy_btn.png" alt="buy button" style="width:50%;">
+![buy-button](public/assets/readme/buy_btn.png)
 
 `src/scenes/game/business/Invest.js` handles the action of invest, it also displays the ammount of money required to purchase.
 
-<img src="public/assets/readme/time.png" alt="time" style="width:50%;">
+![time](public/assets/readme/time.png)
 
 `src/scenes/game/business/Time.js` displays the remaining time to get the money.
 
-<img src="public/assets/readme/hire.png" alt="hire_manager" style="width:50%;">
-
+![hire_manager](public/assets/readme/hire.png)
 
 `src/scenes/game/business/Manager.js` is a button that allows to purchase a manager to handle automatic production, a farmer sprite is displayed when is active.
 
@@ -108,7 +107,7 @@ All mechanics are basically the same as adventure capitalist:
 * Buy and upgrade business
 * Make money from a business
   
-<img src="public/assets/readme/game.png" alt="game" style="width:50%;">
+  <img src="public/assets/readme/game.png" alt="game" style="width:50%;">
   
 * Hire managers
 <img src="public/assets/readme/managers.png" alt="managers" style="width:50%;">
