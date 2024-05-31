@@ -3,7 +3,6 @@
 
 <img src="public/assets/sprites/ui/ecoland-logo.png" alt="ecoland-logo" style="width:50%;">
 
-
 **Future Farm** is an HTML5 game based on [Adventure Capitalist](https://en.wikipedia.org/wiki/AdVenture_Capitalist)., created with [Phaser3 - Webpack template](https://github.com/phaserjs/template-webpack).
 The game was designed mobile first and you can play it now on: [https://ecoland.s3.eu-central-1.amazonaws.com/future-farm/index.html](https://ecoland.s3.eu-central-1.amazonaws.com/future-farm/index.html)
 
@@ -30,11 +29,12 @@ Dist folder can be compressed and upload to any site that support HTML5 games li
 ### Deploy on AWS S3
 
 All assets are stored on S3, to sync your files run `$ aws s3 cp dist/ s3://bucket-url/ --grants read=uri=http://acs.amazonaws.com/groups/global/`
-An online version is available on:
+An online version is available on: [https://ecoland.s3.eu-central-1.amazonaws.com/future-farm/index.html](https://ecoland.s3.eu-central-1.amazonaws.com/future-farm/index.html)
 
 ### Database
 
-Games played by users could be listed on:
+Games played by users and rankings could be listed [from server](https://github.com/ecoland-world/clicker-backend)
+![Rankings](public/assets/readme/rankings.png)
 
 ## Project structure
 
