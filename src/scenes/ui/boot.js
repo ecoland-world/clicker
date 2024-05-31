@@ -209,10 +209,7 @@ export default class BootScene extends MainScene {
       "sfxTutorialAppears",
       urlBase + "assets/audio/fx/tutorialAppears.ogg"
     );
-    this.load.audio(
-      "sfxDwarfHello",
-      urlBase + "assets/audio/fx/dwarfHello.ogg"
-    );
+    this.load.audio("sfxHello", urlBase + "assets/audio/fx/dwarfHello.ogg");
 
     // load json
     this.load.json("translations", urlBase + "assets/texts.json");

@@ -47,7 +47,7 @@ export default class GameScene extends MainScene {
     // load sfx
     this.sfxInvest = this.sound.add("sfxInvest");
     this.sfxHireManager = this.sound.add("sfxHireManager");
-    this.sfxDwarfHello = this.sound.add("sfxDwarfHello", { delay: 0.5 });
+    this.sfxHello = this.sound.add("sfxHello", { delay: 0.5 });
     this.sfxUnlockBusiness = this.sound.add("sfxUnlockBusiness");
     this.sfxBusinessUnlocked = this.sound.add("sfxBusinessUnlocked");
     this.sfxInvestAvailable = this.sound.add("sfxProduce");
@@ -207,7 +207,7 @@ export default class GameScene extends MainScene {
     this.addMoneySpent(business.managerCost);
     business.hireManager();
     this.sfxHireManager.play();
-    this.sfxDwarfHello.play();
+    this.sfxHello.play();
     this.coinsEmitter.explode(
       constants.BUSINESSES[business.key].coinsEmit * 10,
       business.x + 90,
